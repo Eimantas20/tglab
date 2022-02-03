@@ -1,0 +1,16 @@
+.navigation {
+    width: 100vw;
+    background-color: var(--nav-color);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.navigation a {
+    margin: 0 20px;
+    text-decoration: unset;
+    font-size: 20px;
+    color: var(--white-color)
+}

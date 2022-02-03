@@ -1,0 +1,15 @@
+:root {
+    --main-bg-color: #DADADA;
+    --nav-color: #2d2d2d;
+    --comp-bg-color: #323232;
+    --img-bg-color: #444444;
+    --chat-bg-color: #353535;
+    --chat-bg-color-op75: rgba(50, 50, 50, 0.75);;
+
+    --white-color: #fff;
+}
+
+/* Wasn't sure if I MUST use hex values, but that would mean 
+that I'd have to create extra div position absolute, to make backgroud-color with opacity.
+Or by using Sass =>  background-color: fade($color, 50%).
+Decided just to go with plain css as wasn't sure of requirements */
