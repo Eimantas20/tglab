@@ -1,5 +1,4 @@
 .navigation {
-    width: 100vw;
     background-color: var(--nav-color);
     height: 60px;
     display: flex;
