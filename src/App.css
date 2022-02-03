@@ -2,3 +2,16 @@
   background-color: var(--main-bg-color);
   min-height:100vh;
 }
+
+.font-18 {
+  font-size: 18px;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+.font-12 {
+  font-size: 12px;
+  margin-top: 1rem;
+}

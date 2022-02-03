@@ -1,0 +1,17 @@
+.chat-container {
+    padding-top: 1rem;
+    display:flex;
+}
+
+.chat-container .user-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: var(--img-bg-color);
+    flex-shrink: 0;
+    margin-right: 1rem;
+}
+
+.chat-container .top-gap {
+    margin-top: 0.5rem;
+}

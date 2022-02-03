@@ -3,10 +3,13 @@
     --nav-color: #2d2d2d;
     --comp-bg-color: #323232;
     --img-bg-color: #444444;
+    --img-bg-color-50: rgba(68, 68, 68, 0.5);
     --chat-bg-color: #353535;
-    --chat-bg-color-op75: rgba(50, 50, 50, 0.75);;
-
+    --chat-bg-color-op75: rgba(50, 50, 50, 0.75);
+    --small-font-color: #aaaaaa;
     --white-color: #fff;
+    --scrollbar-thumb: #5F5F5F;
+    --scrollbar-background: #B0B0B0;
 }
 
 /* Wasn't sure if I MUST use hex values, but that would mean 

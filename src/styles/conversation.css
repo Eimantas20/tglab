@@ -1,20 +1,56 @@
 .conversation-cont {
-    /* background-color: var(); */
     width: 30%;
     max-width: 500px;
     margin:0 auto;
-    border-radius: 10px 10px 0 0;
 }
 
 .conv-cont-top {
-    padding: 1rem;
-    height: 500px;
+    border-radius: 10px 10px 0 0;
+    padding: 2rem;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
     background-color: var(--chat-bg-color-op75);
-    border-radius: 15px;
 }
 
 .conv-cont-top .img {
+    border-radius: 15px;
     width: 100%;
     height:100%;
+    margin-bottom: 1rem;
     background-color: var(--img-bg-color);
+}
+
+.conv-cont-top .font-12{
+    color:var(--small-font-color)
+}  
+
+
+.conv-cont-bottom {
+    width: 500px;
+    max-height:275px;
+    background-color: var(--chat-bg-color);
+    border-radius: 0 0 10px 10px;
+    padding: 2rem;
+    overflow-y: scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-background); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
