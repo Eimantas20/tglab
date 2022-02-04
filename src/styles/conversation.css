@@ -1,8 +1,6 @@
 .conversation-cont {
-    width: 500px;
-    /* max-width: 500px; */
-    /* margin:0 auto; */
-    /* display: inline-block */
+    width: 30%;
+    max-width: 500px;
 }
 
 .conv-cont-top {
@@ -31,8 +29,6 @@
     padding-right:0;
     background-color: var(--chat-bg-color);
     border-radius: 0 0 10px 10px;
-    width: 500px;
-
 }
 
 .conv-cont-bottom {
@@ -66,4 +62,36 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: var(--scrollbar-thumb-hover); 
+}
+
+
+@media screen and (min-width:641px) and (max-width:1200px) {
+  .conversation-cont {
+    display: flex;
+    width: 90%;
+    max-width: unset;
+    /* margin-top:1rem; */
+  }
+
+  .conv-cont-top {
+    width:90%;
+    border-radius: 10px 0 0 10px;
+    flex-direction: column-reverse;
+    padding-top: 1rem;
+  }
+  
+  .conv-cont-top .img {
+    margin-top: 0.5rem;
+  }
+  
+  .conv-cont-bottom {
+    max-height: 550px;
+    border-radius: 0 10px 10px 0;
+  }
+
+  .padding-round {
+    border-radius: 0 10px 10px 0;
+    padding-top:1rem;
+  }
+
 }

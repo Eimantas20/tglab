@@ -19,9 +19,12 @@ function App() {
 
 
     const getAmountOfItems = () => {
+        let arr = [];
         let width = window.innerWidth;
-        let arr = [...Array(Math.floor(width / 550))];
-        if (arr.length === 0) arr[0] = 0
+        if ( width > 1200) {
+            arr = [...Array(Math.floor(width / 550))];
+        } else {arr[0]=0}
+        // if (arr.length === 0) arr[0] = 0
         setItems(arr);
     }
     
@@ -30,8 +33,8 @@ function App() {
             <div className="app-container">
                 <Navigation />
                 <div className='multi-conver-cont'>
-                    {items.map(item => (
-                        <Conversation />
+                    {items.map((item, i ) => (
+                        <Conversation key={i}/>
                     ))}
                 </div>
                 <Routes>
