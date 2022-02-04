@@ -6,8 +6,10 @@
     --img-bg-color-50: rgba(68, 68, 68, 0.5);
     --chat-bg-color: #353535;
     --chat-bg-color-op75: rgba(50, 50, 50, 0.75);
+    --chat-bg-color-like-op75: #505050;
     --small-font-color: #aaaaaa;
     --white-color: #fff;
+    --white-color-ap25: rgba(255, 255, 255, 0.25);
     --scrollbar-thumb: #5F5F5F;
     --scrollbar-thumb-hover: #555;
     --scrollbar-background: #B0B0B0;

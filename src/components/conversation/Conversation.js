@@ -6,11 +6,7 @@ const Conversation = () => {
     const chatsArr = [
         {
         name:'Thomas',
-            text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud'
-        },
-        {
-            name: 'Thomas',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud'
+            text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
         },
         {
             name: 'Laura',
@@ -30,12 +26,12 @@ const Conversation = () => {
         <div className='conversation-cont'>
             <div className='conv-cont-top'>
                 <div className='img' />
-                    <div>
-                        <p className='font-18'>Lorem ipsum dolor sit amet, consectetur</p>
-                        <p className='font-14'>Lorem ipsum</p>  
-                        <p className='font-12'>Lorem ipsum dolor sit</p>  
-                    </div>
+                <div>
+                    <p className='font-18'>Lorem ipsum dolor sit amet, consectetur</p>
+                    <p className='font-14'>Lorem ipsum</p>  
+                    <p className='font-12'>Lorem ipsum dolor sit</p>  
                 </div>
+            </div>
             <div className='padding-round'>
                 <div className='conv-cont-bottom'>
                     <Search />
