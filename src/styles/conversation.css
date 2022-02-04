@@ -42,56 +42,73 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+    width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: var(--scrollbar-background); 
-  border-radius: 10px;
-
+    background: var(--scrollbar-background); 
+    border-radius: 10px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--scrollbar-thumb); 
-  border-radius: 10px;
-
+    background: var(--scrollbar-thumb); 
+    border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--scrollbar-thumb-hover); 
+    background: var(--scrollbar-thumb-hover); 
 }
 
-
 @media screen and (min-width:641px) and (max-width:1200px) {
-  .conversation-cont {
-    display: flex;
-    width: 90%;
-    max-width: unset;
-    /* margin-top:1rem; */
-  }
+    .conversation-cont {
+        display: flex;
+        width: 90%;
+        max-width: unset;
+    }
 
-  .conv-cont-top {
-    width:90%;
-    border-radius: 10px 0 0 10px;
-    flex-direction: column-reverse;
-    padding-top: 1rem;
-  }
-  
-  .conv-cont-top .img {
-    margin-top: 0.5rem;
-  }
-  
-  .conv-cont-bottom {
-    max-height: 550px;
-    border-radius: 0 10px 10px 0;
-  }
+    .conv-cont-top {
+        width:90%;
+        border-radius: 10px 0 0 10px;
+        flex-direction: column-reverse;
+        padding-top: 1rem;
+        height: calc(100vh - 130px);
+    }
 
-  .padding-round {
-    border-radius: 0 10px 10px 0;
-    padding-top:1rem;
-  }
+    .conv-cont-top .img {
+        margin-top: 0.5rem;
+    }
 
+    .padding-round {
+        height: calc(100vh - 130px);
+    }
+
+    .conv-cont-bottom {
+        max-height: 100%;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .padding-round {
+        border-radius: 0 10px 10px 0;
+        padding-top:1rem;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .conversation-cont {
+        width:95%;
+    }
+
+    .conv-cont-top {
+        height: calc(60vh - 85px);
+        padding: 1rem
+    }
+
+    .conv-cont-bottom {
+        max-height: 35vh;
+        padding-left:1rem;
+        padding-right:1rem;
+    }
 }

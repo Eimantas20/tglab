@@ -13,3 +13,31 @@
     font-size: 20px;
     color: var(--white-color)
 }
+
+.navigation .open-menu {
+    width:45px;
+    height:25px;
+    display:none;
+}
+
+@media screen and (max-width: 640px) {
+    .navigation {
+        justify-content: flex-end;
+        margin-bottom: 25px;
+    }
+
+    .navigation .open-menu {
+        display: block;
+        margin-right: 5%;
+
+    }
+
+    .navigation-items {
+        display:none;
+        position: absolute;
+        width: 100vw;
+        height: calc(100vh - 60px);
+        bottom: 0;
+        z-index: 100;
+    }
+}
